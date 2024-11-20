@@ -1,0 +1,483 @@
+TABLE 1) THE TABLE FOR THE MULTILEVEL MODEL
+===============================================
+                        Dependent variable:    
+                    ---------------------------
+                              stfdem           
+-----------------------------------------------
+libdem_core                  -0.424***         
+                              (0.034)          
+                                               
+socdem_core                  -0.662***         
+                              (0.034)          
+                                               
+directdem_core               -1.018***         
+                              (0.034)          
+                                               
+popdem_core                  -1.149***         
+                              (0.042)          
+                                               
+agea_std                     0.435***          
+                              (0.049)          
+                                               
+hinctnta_std                 0.733***          
+                              (0.042)          
+                                               
+eduyrs_std                     0.097           
+                              (0.078)          
+                                               
+gndr                          -0.032           
+                              (0.023)          
+                                               
+Constant                     5.143***          
+                              (0.207)          
+                                               
+-----------------------------------------------
+Observations                  43,763           
+Log Likelihood             -100,095.500        
+Akaike Inf. Crit.           200,213.000        
+Bayesian Inf. Crit.         200,308.500        
+===============================================
+Note:               *p<0.1; **p<0.05; ***p<0.01
+
+
+TABLE 2) CONVENTIONAL PARTICIPATION MODEL OUTPUT
+lavaan 0.6-19 ended normally after 1 iteration
+
+  Estimator                                         ML
+  Optimization method                           NLMINB
+  Number of model parameters                        17
+
+                                                  Used       Total
+  Number of observations                         40097       43763
+  Number of clusters [cntry]                        31            
+
+Model Test User Model:
+                                              Standard      Scaled
+  Test Statistic                               598.811      60.120
+  Degrees of freedom                                 4           4
+  P-value (Chi-square)                           0.000       0.000
+  Scaling correction factor                                  9.960
+    Yuan-Bentler correction (Mplus variant)                       
+
+Model Test Baseline Model:
+
+  Test statistic                              6364.826    1218.296
+  Degrees of freedom                                17          17
+  P-value                                        0.000       0.000
+  Scaling correction factor                                  5.224
+
+User Model versus Baseline Model:
+
+  Comparative Fit Index (CFI)                    0.906       0.953
+  Tucker-Lewis Index (TLI)                       0.602       0.801
+                                                                  
+  Robust Comparative Fit Index (CFI)                         0.911
+  Robust Tucker-Lewis Index (TLI)                            0.621
+
+Loglikelihood and Information Criteria:
+
+  Loglikelihood user model (H0)             -89241.582  -89241.582
+  Scaling correction factor                                 32.505
+      for the MLR correction                                      
+  Loglikelihood unrestricted model (H1)     -88942.177  -88942.177
+  Scaling correction factor                                 28.211
+      for the MLR correction                                      
+                                                                  
+  Akaike (AIC)                              178517.164  178517.164
+  Bayesian (BIC)                            178663.348  178663.348
+  Sample-size adjusted Bayesian (SABIC)     178609.322  178609.322
+
+Root Mean Square Error of Approximation:
+
+  RMSEA                                          0.061       0.019
+  90 Percent confidence interval - lower         0.057       0.017
+  90 Percent confidence interval - upper         0.065       0.020
+  P-value H_0: RMSEA <= 0.050                    0.000       1.000
+  P-value H_0: RMSEA >= 0.080                    0.000       0.000
+                                                                  
+  Robust RMSEA                                               0.059
+  90 Percent confidence interval - lower                     0.046
+  90 Percent confidence interval - upper                     0.073
+  P-value H_0: Robust RMSEA <= 0.050                         0.116
+  P-value H_0: Robust RMSEA >= 0.080                         0.005
+
+Standardized Root Mean Square Residual:
+
+  SRMR                                           0.014       0.014
+
+Parameter Estimates:
+
+  Standard errors                        Robust.cluster
+  Information                                  Observed
+  Observed information based on                 Hessian
+
+Regressions:
+                   Estimate  Std.Err  z-value  P(>|z|)   Std.lv  Std.all
+  stfdem ~                                                              
+    socdem_cr (a1)   -1.284    0.225   -5.699    0.000   -1.284   -0.189
+    libdem_cr (a2)   -0.729    0.141   -5.165    0.000   -0.729   -0.104
+    drctdm_cr (a3)   -1.383    0.236   -5.853    0.000   -1.383   -0.197
+    popdem_cr (a4)   -1.622    0.212   -7.639    0.000   -1.622   -0.181
+  part_tradition ~                                                      
+    stfdem    (b1)    0.006    0.002    3.496    0.000    0.006    0.075
+    socdem_cr (b2)   -0.039    0.007   -5.938    0.000   -0.039   -0.070
+    libdem_cr (b3)   -0.020    0.006   -3.560    0.000   -0.020   -0.035
+    drctdm_cr (b4)   -0.015    0.005   -2.749    0.006   -0.015   -0.026
+    popdem_cr (b5)   -0.029    0.005   -5.509    0.000   -0.029   -0.039
+    agea              0.001    0.000    5.681    0.000    0.001    0.095
+    hinctnta          0.007    0.001    7.268    0.000    0.007    0.087
+    eduyrs            0.011    0.001    9.300    0.000    0.011    0.201
+    gndr             -0.018    0.003   -5.925    0.000   -0.018   -0.042
+
+Intercepts:
+                   Estimate  Std.Err  z-value  P(>|z|)   Std.lv  Std.all
+   .stfdem            6.076    0.268   22.713    0.000    6.076    2.275
+   .part_tradition    0.083    0.026    3.189    0.001    0.083    0.383
+
+Variances:
+                   Estimate  Std.Err  z-value  P(>|z|)   Std.lv  Std.all
+   .stfdem            6.731    0.379   17.741    0.000    6.731    0.944
+   .part_tradition    0.044    0.002   23.100    0.000    0.044    0.921
+
+Defined Parameters:
+                   Estimate  Std.Err  z-value  P(>|z|)   Std.lv  Std.all
+    indrct_scdm_cr   -0.008    0.003   -2.704    0.007   -0.008   -0.014
+    indrct_lbdm_cr   -0.004    0.002   -2.659    0.008   -0.004   -0.008
+    indrct_drctdm_   -0.009    0.003   -3.101    0.002   -0.009   -0.015
+    indrct_ppdm_cr   -0.010    0.003   -3.042    0.002   -0.010   -0.014
+    total_socdm_cr   -0.047    0.008   -6.078    0.000   -0.047   -0.084
+    total_libdm_cr   -0.024    0.006   -3.921    0.000   -0.024   -0.043
+    totl_drctdm_cr   -0.023    0.007   -3.489    0.000   -0.023   -0.041
+    total_popdm_cr   -0.038    0.006   -6.424    0.000   -0.038   -0.053
+
+TABLE 3) CONVENTIONAL PARTICIPATION MODEL WITH BOOTSTRAPPED STANDARD ERRORS OUTPUT
+lavaan 0.6-19 ended normally after 1 iteration
+
+  Estimator                                         ML
+  Optimization method                           NLMINB
+  Number of model parameters                        17
+
+                                                  Used       Total
+  Number of observations                         40097       43763
+  Number of clusters [cntry]                        31            
+
+Model Test User Model:
+                                              Standard      Scaled
+  Test Statistic                               598.811      60.108
+  Degrees of freedom                                 4           4
+  P-value (Chi-square)                           0.000       0.000
+  Scaling correction factor                                  9.962
+    Yuan-Bentler correction (Mplus variant)                       
+  Information                                 Expected            
+
+Model Test Baseline Model:
+
+  Test statistic                              6364.826    1218.296
+  Degrees of freedom                                17          17
+  P-value                                        0.000       0.000
+  Scaling correction factor                                  5.224
+
+User Model versus Baseline Model:
+
+  Comparative Fit Index (CFI)                    0.906       0.953
+  Tucker-Lewis Index (TLI)                       0.602       0.801
+                                                                  
+  Robust Comparative Fit Index (CFI)                         0.911
+  Robust Tucker-Lewis Index (TLI)                            0.621
+
+Loglikelihood and Information Criteria:
+
+  Loglikelihood user model (H0)             -89241.582  -89241.582
+  Scaling correction factor                                 32.504
+      for the MLR correction                                      
+  Loglikelihood unrestricted model (H1)     -88942.177  -88942.177
+  Scaling correction factor                                 28.211
+      for the MLR correction                                      
+                                                                  
+  Akaike (AIC)                              178517.164  178517.164
+  Bayesian (BIC)                            178663.348  178663.348
+  Sample-size adjusted Bayesian (SABIC)     178609.322  178609.322
+
+Root Mean Square Error of Approximation:
+
+  RMSEA                                          0.061       0.019
+  90 Percent confidence interval - lower         0.057       0.017
+  90 Percent confidence interval - upper         0.065       0.020
+  P-value H_0: RMSEA <= 0.050                    0.000       1.000
+  P-value H_0: RMSEA >= 0.080                    0.000       0.000
+                                                                  
+  Robust RMSEA                                               0.059
+  90 Percent confidence interval - lower                     0.046
+  90 Percent confidence interval - upper                     0.073
+  P-value H_0: Robust RMSEA <= 0.050                         0.116
+  P-value H_0: Robust RMSEA >= 0.080                         0.005
+
+Standardized Root Mean Square Residual:
+
+  SRMR                                           0.014       0.014
+
+Parameter Estimates:
+
+  Standard errors                            Bootstrap
+  Number of requested bootstrap draws             1000
+  Number of successful bootstrap draws            1000
+
+Regressions:
+                   Estimate  Std.Err  z-value  P(>|z|)   Std.lv  Std.all
+  stfdem ~                                                              
+    socdem_cr (a1)   -1.284    0.036  -35.911    0.000   -1.284   -0.189
+    libdem_cr (a2)   -0.729    0.037  -19.495    0.000   -0.729   -0.104
+    drctdm_cr (a3)   -1.383    0.037  -37.268    0.000   -1.383   -0.197
+    popdem_cr (a4)   -1.622    0.048  -33.742    0.000   -1.622   -0.181
+  part_tradition ~                                                      
+    stfdem    (b1)    0.006    0.000   14.504    0.000    0.006    0.075
+    socdem_cr (b2)   -0.039    0.003  -12.664    0.000   -0.039   -0.070
+    libdem_cr (b3)   -0.020    0.003   -6.256    0.000   -0.020   -0.035
+    drctdm_cr (b4)   -0.015    0.003   -4.845    0.000   -0.015   -0.026
+    popdem_cr (b5)   -0.029    0.004   -7.409    0.000   -0.029   -0.039
+    agea              0.001    0.000   18.171    0.000    0.001    0.095
+    hinctnta          0.007    0.000   16.007    0.000    0.007    0.087
+    eduyrs            0.011    0.000   34.209    0.000    0.011    0.201
+    gndr             -0.018    0.002   -8.729    0.000   -0.018   -0.042
+
+Intercepts:
+                   Estimate  Std.Err  z-value  P(>|z|)   Std.lv  Std.all
+   .stfdem            6.076    0.020  296.669    0.000    6.076    2.275
+   .part_tradition    0.083    0.008   10.478    0.000    0.083    0.383
+
+Variances:
+                   Estimate  Std.Err  z-value  P(>|z|)   Std.lv  Std.all
+   .stfdem            6.731    0.039  172.823    0.000    6.731    0.944
+   .part_tradition    0.044    0.000  113.691    0.000    0.044    0.921
+
+Defined Parameters:
+                   Estimate  Std.Err  z-value  P(>|z|)   Std.lv  Std.all
+    indrct_scdm_cr   -0.008    0.001  -13.668    0.000   -0.008   -0.014
+    indrct_lbdm_cr   -0.004    0.000  -11.549    0.000   -0.004   -0.008
+    indrct_drctdm_   -0.009    0.001  -13.582    0.000   -0.009   -0.015
+    indrct_ppdm_cr   -0.010    0.001  -13.196    0.000   -0.010   -0.014
+    total_socdm_cr   -0.047    0.003  -15.316    0.000   -0.047   -0.084
+    total_libdm_cr   -0.024    0.003   -7.679    0.000   -0.024   -0.043
+    totl_drctdm_cr   -0.023    0.003   -7.714    0.000   -0.023   -0.041
+    total_popdm_cr   -0.038    0.004  -10.013    0.000   -0.038   -0.053
+
+TABLE 4) UNCONVETIONAL PARTICIPATION MODEL OUTPUT
+lavaan 0.6-19 ended normally after 2 iterations
+
+  Estimator                                         ML
+  Optimization method                           NLMINB
+  Number of model parameters                        17
+
+                                                  Used       Total
+  Number of observations                         42809       43763
+  Number of clusters [cntry]                        31            
+
+Model Test User Model:
+                                              Standard      Scaled
+  Test Statistic                               509.331      46.962
+  Degrees of freedom                                 4           4
+  P-value (Chi-square)                           0.000       0.000
+  Scaling correction factor                                 10.846
+    Yuan-Bentler correction (Mplus variant)                       
+
+Model Test Baseline Model:
+
+  Test statistic                              6657.547     949.919
+  Degrees of freedom                                17          17
+  P-value                                        0.000       0.000
+  Scaling correction factor                                  7.009
+
+User Model versus Baseline Model:
+
+  Comparative Fit Index (CFI)                    0.924       0.954
+  Tucker-Lewis Index (TLI)                       0.677       0.804
+                                                                  
+  Robust Comparative Fit Index (CFI)                         0.929
+  Robust Tucker-Lewis Index (TLI)                            0.697
+
+Loglikelihood and Information Criteria:
+
+  Loglikelihood user model (H0)            -102580.088 -102580.088
+  Scaling correction factor                                 41.043
+      for the MLR correction                                      
+  Loglikelihood unrestricted model (H1)    -102325.423 -102325.423
+  Scaling correction factor                                 35.291
+      for the MLR correction                                      
+                                                                  
+  Akaike (AIC)                              205194.177  205194.177
+  Bayesian (BIC)                            205341.474  205341.474
+  Sample-size adjusted Bayesian (SABIC)     205287.447  205287.447
+
+Root Mean Square Error of Approximation:
+
+  RMSEA                                          0.054       0.016
+  90 Percent confidence interval - lower         0.050       0.015
+  90 Percent confidence interval - upper         0.058       0.017
+  P-value H_0: RMSEA <= 0.050                    0.035       1.000
+  P-value H_0: RMSEA >= 0.080                    0.000       0.000
+                                                                  
+  Robust RMSEA                                               0.052
+  90 Percent confidence interval - lower                     0.039
+  90 Percent confidence interval - upper                     0.066
+  P-value H_0: Robust RMSEA <= 0.050                         0.367
+  P-value H_0: Robust RMSEA >= 0.080                         0.000
+
+Standardized Root Mean Square Residual:
+
+  SRMR                                           0.013       0.013
+
+Parameter Estimates:
+
+  Standard errors                        Robust.cluster
+  Information                                  Observed
+  Observed information based on                 Hessian
+
+Regressions:
+                   Estimate  Std.Err  z-value  P(>|z|)   Std.lv  Std.all
+  stfdem ~                                                              
+    socdem_cr (a1)   -1.243    0.216   -5.745    0.000   -1.243   -0.183
+    libdem_cr (a2)   -0.707    0.137   -5.141    0.000   -0.707   -0.102
+    drctdm_cr (a3)   -1.362    0.231   -5.905    0.000   -1.362   -0.193
+    popdem_cr (a4)   -1.603    0.198   -8.093    0.000   -1.603   -0.178
+  part_protest ~                                                        
+    stfdem    (b1)   -0.005    0.002   -2.006    0.045   -0.005   -0.050
+    socdem_cr (b2)   -0.060    0.008   -7.109    0.000   -0.060   -0.092
+    libdem_cr (b3)   -0.031    0.006   -5.137    0.000   -0.031   -0.045
+    drctdm_cr (b4)   -0.016    0.007   -2.310    0.021   -0.016   -0.023
+    popdem_cr (b5)   -0.037    0.009   -4.208    0.000   -0.037   -0.043
+    agea             -0.002    0.000   -7.318    0.000   -0.002   -0.113
+    hinctnta          0.005    0.001    5.216    0.000    0.005    0.050
+    eduyrs            0.012    0.001    9.793    0.000    0.012    0.197
+    gndr              0.001    0.006    0.145    0.885    0.001    0.002
+
+Intercepts:
+                   Estimate  Std.Err  z-value  P(>|z|)   Std.lv  Std.all
+   .stfdem            6.105    0.261   23.370    0.000    6.105    2.286
+   .part_protest      0.123    0.026    4.708    0.000    0.123    0.473
+
+Variances:
+                   Estimate  Std.Err  z-value  P(>|z|)   Std.lv  Std.all
+   .stfdem            6.747    0.379   17.814    0.000    6.747    0.946
+   .part_protest      0.061    0.004   17.323    0.000    0.061    0.914
+
+Defined Parameters:
+                   Estimate  Std.Err  z-value  P(>|z|)   Std.lv  Std.all
+    indrct_scdm_cr    0.006    0.003    2.296    0.022    0.006    0.009
+    indrct_lbdm_cr    0.003    0.002    1.968    0.049    0.003    0.005
+    indrct_drctdm_    0.007    0.003    1.955    0.051    0.007    0.010
+    indrct_ppdm_cr    0.008    0.004    2.159    0.031    0.008    0.009
+    total_socdm_cr   -0.054    0.009   -6.153    0.000   -0.054   -0.083
+    total_libdm_cr   -0.027    0.006   -4.770    0.000   -0.027   -0.040
+    totl_drctdm_cr   -0.009    0.007   -1.265    0.206   -0.009   -0.013
+    total_popdm_cr   -0.030    0.010   -3.049    0.002   -0.030   -0.034
+
+TABLE 5) UNCONVENTIONAL PARTICIPATION MODEL WITH BOOTSTRAPPED STANDARD ERRORS OUTPUT
+lavaan 0.6-19 ended normally after 2 iterations
+
+  Estimator                                         ML
+  Optimization method                           NLMINB
+  Number of model parameters                        17
+
+                                                  Used       Total
+  Number of observations                         42809       43763
+  Number of clusters [cntry]                        31            
+
+Model Test User Model:
+                                              Standard      Scaled
+  Test Statistic                               509.331      46.407
+  Degrees of freedom                                 4           4
+  P-value (Chi-square)                           0.000       0.000
+  Scaling correction factor                                 10.975
+    Yuan-Bentler correction (Mplus variant)                       
+  Information                                 Expected            
+
+Model Test Baseline Model:
+
+  Test statistic                              6657.547     949.919
+  Degrees of freedom                                17          17
+  P-value                                        0.000       0.000
+  Scaling correction factor                                  7.009
+
+User Model versus Baseline Model:
+
+  Comparative Fit Index (CFI)                    0.924       0.955
+  Tucker-Lewis Index (TLI)                       0.677       0.807
+                                                                  
+  Robust Comparative Fit Index (CFI)                         0.929
+  Robust Tucker-Lewis Index (TLI)                            0.697
+
+Loglikelihood and Information Criteria:
+
+  Loglikelihood user model (H0)            -102580.088 -102580.088
+  Scaling correction factor                                 41.012
+      for the MLR correction                                      
+  Loglikelihood unrestricted model (H1)    -102325.423 -102325.423
+  Scaling correction factor                                 35.291
+      for the MLR correction                                      
+                                                                  
+  Akaike (AIC)                              205194.177  205194.177
+  Bayesian (BIC)                            205341.474  205341.474
+  Sample-size adjusted Bayesian (SABIC)     205287.447  205287.447
+
+Root Mean Square Error of Approximation:
+
+  RMSEA                                          0.054       0.016
+  90 Percent confidence interval - lower         0.050       0.015
+  90 Percent confidence interval - upper         0.058       0.017
+  P-value H_0: RMSEA <= 0.050                    0.035       1.000
+  P-value H_0: RMSEA >= 0.080                    0.000       0.000
+                                                                  
+  Robust RMSEA                                               0.052
+  90 Percent confidence interval - lower                     0.039
+  90 Percent confidence interval - upper                     0.066
+  P-value H_0: Robust RMSEA <= 0.050                         0.368
+  P-value H_0: Robust RMSEA >= 0.080                         0.000
+
+Standardized Root Mean Square Residual:
+
+  SRMR                                           0.013       0.013
+
+Parameter Estimates:
+
+  Standard errors                            Bootstrap
+  Number of requested bootstrap draws             1000
+  Number of successful bootstrap draws            1000
+
+Regressions:
+                   Estimate  Std.Err  z-value  P(>|z|)   Std.lv  Std.all
+  stfdem ~                                                              
+    socdem_cr (a1)   -1.243    0.034  -36.541    0.000   -1.243   -0.183
+    libdem_cr (a2)   -0.707    0.035  -20.129    0.000   -0.707   -0.102
+    drctdm_cr (a3)   -1.362    0.037  -37.183    0.000   -1.362   -0.193
+    popdem_cr (a4)   -1.603    0.047  -34.156    0.000   -1.603   -0.178
+  part_protest ~                                                        
+    stfdem    (b1)   -0.005    0.000   -9.732    0.000   -0.005   -0.050
+    socdem_cr (b2)   -0.060    0.004  -17.041    0.000   -0.060   -0.092
+    libdem_cr (b3)   -0.031    0.004   -8.307    0.000   -0.031   -0.045
+    drctdm_cr (b4)   -0.016    0.004   -4.365    0.000   -0.016   -0.023
+    popdem_cr (b5)   -0.037    0.004   -8.487    0.000   -0.037   -0.043
+    agea             -0.002    0.000  -24.286    0.000   -0.002   -0.113
+    hinctnta          0.005    0.001    9.524    0.000    0.005    0.050
+    eduyrs            0.012    0.000   36.100    0.000    0.012    0.197
+    gndr              0.001    0.002    0.346    0.730    0.001    0.002
+
+Intercepts:
+                   Estimate  Std.Err  z-value  P(>|z|)   Std.lv  Std.all
+   .stfdem            6.105    0.020  306.378    0.000    6.105    2.286
+   .part_protest      0.123    0.008   14.624    0.000    0.123    0.473
+
+Variances:
+                   Estimate  Std.Err  z-value  P(>|z|)   Std.lv  Std.all
+   .stfdem            6.747    0.039  172.131    0.000    6.747    0.946
+   .part_protest      0.061    0.000  124.360    0.000    0.061    0.914
+
+Defined Parameters:
+                   Estimate  Std.Err  z-value  P(>|z|)   Std.lv  Std.all
+    indrct_scdm_cr    0.006    0.001    9.478    0.000    0.006    0.009
+    indrct_lbdm_cr    0.003    0.000    8.767    0.000    0.003    0.005
+    indrct_drctdm_    0.007    0.001    9.350    0.000    0.007    0.010
+    indrct_ppdm_cr    0.008    0.001    9.373    0.000    0.008    0.009
+    total_socdm_cr   -0.054    0.004  -15.471    0.000   -0.054   -0.083
+    total_libdm_cr   -0.027    0.004   -7.386    0.000   -0.027   -0.040
+    totl_drctdm_cr   -0.009    0.004   -2.505    0.012   -0.009   -0.013
+    total_popdm_cr   -0.030    0.004   -6.766    0.000   -0.030   -0.034
